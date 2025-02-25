@@ -1,0 +1,106 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 16px; /* Base font size */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #363062; /* Dark purple */
+  color: #f8e7d1; /* Cream/off-white */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container is responsive: width 90% on small screens, up to 800px on large */
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #464a7d; /* Slightly lighter purple/blue */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #7c7f9a; /* Mid-tone purple/blue */
+  color: #f8e7d1; /* Cream text */
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f8e7d1; /* Cream */
+  color: #363062; /* Dark purple text */
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center; /* Center everything in the footer */
+}
+
+/* Wrap any text or "Developer Info" in its own block for spacing */
+footer .footer-info {
+  margin-bottom: 10px;
+}
+
+/* If you have a container for social links (e.g., GitHub, LinkedIn) */
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 1rem; /* Space between items */
+  margin-top: 10px;
+}
+
+/* Make the links inline-flex so icons and text don’t overlap */
+footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #7c7f9a; /* Mid-tone purple/blue */
+}
+
+/* Media Query: Adjust for screens narrower than 768px */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  button {
+    margin: 5px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
